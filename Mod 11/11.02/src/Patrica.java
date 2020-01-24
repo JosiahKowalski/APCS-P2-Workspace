@@ -39,7 +39,7 @@ public class Patrica {
         }
 		System.out.println("What is your favorite subject?");
 		String subject = in.nextLine();
-		if (!subject.equalsIgnoreCase("Science") || !subject.equalsIgnoreCase("Math")) {
+		if (!subject.equalsIgnoreCase("Science") && !subject.equalsIgnoreCase("Math")) {
 			System.out.println("Ewwwww that subject sucksss");
 		}
 		else if (love.equalsIgnoreCase("yes")) {
