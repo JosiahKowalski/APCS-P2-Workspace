@@ -18,7 +18,7 @@ public class Patrica {
         System.out.println("How was your day?");
         String day = in.nextLine();
         while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && love.equalsIgnoreCase("yes")) {
-            System.out.println("Try to think of a more simple word for my computer ears! <.>");
+            System.out.println("Try to think of a more simple word for my computer ears! /:");
             day = in.nextLine();
         }
         while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && love.equalsIgnoreCase("no")) {
