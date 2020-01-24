@@ -32,7 +32,7 @@ public class Patrica {
 			System.out.println("Damnit, If only I could make it worse.");
 		}
 		else if ((day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible")) && love.equalsIgnoreCase("yes")) {
-			System.out.println("Oh that sucks, I'm sorry. If only I could make it better.");
+			System.out.println("Oh that sucks, I'm very sorry. If only I could make it better.");
 		}
 		else if ((day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible")) && love.equalsIgnoreCase("no")) {
 			System.out.println("Good, I hope tomorrow is even worse."); 
