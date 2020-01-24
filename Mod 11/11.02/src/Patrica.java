@@ -50,6 +50,6 @@ public class Patrica {
 		}
 			
 		
-			
+			in.close();
 	}
 }
