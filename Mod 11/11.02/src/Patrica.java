@@ -75,7 +75,7 @@ public class Patrica {
 			System.out.println("Oh, that's very interesting, I'm enjoying how fast technology is advancing.");
 		}
 		else {
-			System.out.println("That sounds very dumb, I hope you die.");
+			System.out.println("That sounds veryy dumb, I hope you die.");
 		}
 		
 			in.close();
