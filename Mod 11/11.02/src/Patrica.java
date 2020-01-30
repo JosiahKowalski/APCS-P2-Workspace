@@ -72,7 +72,7 @@ public class Patrica {
 		System.out.println("How do you feel about the current state of the world?");
 		@SuppressWarnings("unused") String stateOfTheWorld = in.nextLine();
 		if (love) {
-			System.out.println("Oh, that's veryy interesting, I'm enjoying how fast technology is advancing.");
+			System.out.println("Oh, that's very interesting, I'm enjoying how fast technology is advancing.");
 		}
 		else {
 			System.out.println("That sounds very dumb, I hope you die.");
