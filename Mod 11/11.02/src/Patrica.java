@@ -5,39 +5,56 @@ public class Patrica {
 		Scanner in = new Scanner(System.in);
 		System.out.println("My name is Patrica");
         System.out.println("Do you love me?");
-        String love = in.nextLine();
-        while (!love.equalsIgnoreCase("yes") && !love.equalsIgnoreCase("no")) {
-        	System.out.println("I'm not sure I understand, please speak clearly");
-        	love = in.nextLine();
-        }
-        	if (love.equalsIgnoreCase("yes")) {
+        Boolean love = null;
+        String stringLove = in.nextLine();
+		if (stringLove.equalsIgnoreCase("yes")) {
+			love = true;
+		}
+		else if (stringLove.equalsIgnoreCase("no")){
+			love = false;
+		}
+			while (love == null) {
+				System.out.println("I'm not sure I understand, please speak clearly");
+				stringLove = in.nextLine();
+				if (stringLove.equalsIgnoreCase("yes")) {
+					love = true;
+				}
+				else if (stringLove.equalsIgnoreCase("no")){
+					love = false;
+				}
+			}
+        	if (love) {
         	System.out.println("Aww, I love you too! (^o^)");
         }
-        else if (love.equalsIgnoreCase("no")) {
+        else {
             System.out.println("Okay then. -_-");
 		}
 		TimeUnit.SECONDS.sleep(1);
         System.out.println("How was your day?");
         String day = in.nextLine();
-        while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && love.equalsIgnoreCase("yes")) {
+        while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && love) {
             System.out.println("Try to think of a more simple word for my computer ears! /:");
             day = in.nextLine();
         }
-        while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && love.equalsIgnoreCase("no")) {
+        while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && !love) {
             System.out.println("Think of something I can understand you stupid head! -_-");
             day = in.nextLine();
         }
-		if ((day.equalsIgnoreCase("good") || day.equalsIgnoreCase("great") || day.equalsIgnoreCase("amazing")) && love.equalsIgnoreCase("yes")) {
+		boolean goodDay = day.equalsIgnoreCase("good") || day.equalsIgnoreCase("great") || day.equalsIgnoreCase("amazing");
+		if (goodDay && love) {
 			System.out.println("That's amazing! I'm so glad!");
 		}
-		else if ((day.equalsIgnoreCase("good") || day.equalsIgnoreCase("great") || day.equalsIgnoreCase("amazing")) && love.equalsIgnoreCase("no")) {
-			System.out.println("Damnit, If only I could make it worse.");
+		else if (goodDay) {
+			System.out.println("Dammit, If only I could make it worse.");
 		}
-		else if ((day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible")) && love.equalsIgnoreCase("yes")) {
-			System.out.println("Oh that sucks, I'm very sorry. If only I could make it better.");
-		}
-		else if ((day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible")) && love.equalsIgnoreCase("no")) {
-			System.out.println("Good, I hope tomorrow is even worse."); 
+		else {
+			boolean badDay = day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible");
+			if (badDay && love) {
+				System.out.println("Oh that sucks, I'm very sorry. If only I could make it better.");
+			}
+			else if (badDay) {
+				System.out.println("Good, I hope tomorrow is even worse.");
+			}
 		}
 		TimeUnit.SECONDS.sleep(1);
 		System.out.println("What is your favorite subject?");
@@ -45,7 +62,7 @@ public class Patrica {
 		if (!subject.equalsIgnoreCase("Science") && !subject.equalsIgnoreCase("Math")) {
 			System.out.println("Ewwww that subject sucksss");
 		}
-		else if (love.equalsIgnoreCase("yes")) {
+		else if (love) {
 			System.out.println("Ooooo I love that subject, just like I love you uwu");
 		}
 		else {
@@ -53,8 +70,8 @@ public class Patrica {
 		}
 		TimeUnit.SECONDS.sleep(1);
 		System.out.println("How do you feel about the current state of the world?");
-		String stateOfTheWorld = in.nextLine();
-		if (love.equalsIgnoreCase("yes")) {
+		@SuppressWarnings("unused") String stateOfTheWorld = in.nextLine();
+		if (love) {
 			System.out.println("Oh, that's very interesting, I'm enjoying how fast technology is advancing.");
 		}
 		else {
