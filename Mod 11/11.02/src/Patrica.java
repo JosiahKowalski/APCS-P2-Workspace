@@ -32,6 +32,9 @@ public class Patrica {
 		TimeUnit.SECONDS.sleep(1);
         System.out.println("How was your day?");
         String day = in.nextLine();
+        boolean goodDay = day.equalsIgnoreCase("good") || day.equalsIgnoreCase("great") || day.equalsIgnoreCase("amazing");
+        boolean badDay = day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible");
+
         while ((!day.equalsIgnoreCase("bad") && !day.equalsIgnoreCase("crappy") && !day.equalsIgnoreCase("horrible") && !day.equalsIgnoreCase("good") && !day.equalsIgnoreCase("great") && !day.equalsIgnoreCase("amazing")) && love) {
             System.out.println("Try to think of a more simple word for my computer ears! /:");
             day = in.nextLine();
@@ -40,7 +43,7 @@ public class Patrica {
             System.out.println("Think of something I can understand you stupid head! -_-");
             day = in.nextLine();
         }
-		boolean goodDay = day.equalsIgnoreCase("good") || day.equalsIgnoreCase("great") || day.equalsIgnoreCase("amazing");
+
 		if (goodDay && love) {
 			System.out.println("That's amazing! I'm so glad!");
 		}
@@ -48,7 +51,7 @@ public class Patrica {
 			System.out.println("Dammit, If only I could make it worse.");
 		}
 		else {
-			boolean badDay = day.equalsIgnoreCase("bad") || day.equalsIgnoreCase("crappy") || day.equalsIgnoreCase("horrible");
+
 			if (badDay && love) {
 				System.out.println("Oh that sucks, I'm very sorry. If only I could make it better.");
 			}
@@ -77,7 +80,7 @@ public class Patrica {
 		else {
 			System.out.println("That sounds very dumb, I hope you die.");
 		}
-		
+
 			in.close();
 	}
 }
