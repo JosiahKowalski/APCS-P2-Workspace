@@ -1,11 +1,31 @@
+import java.io.*;
+import java.awt.GraphicsEnvironment;
+import java.net.URISyntaxException;
 import java.util.Arrays;
-
+import java.util.Scanner;
 public class BruteForce {
-    public static void main(String[] args) {
-        bruteForce(16);
+    static String pass;
+
+
+    public String getPassword() {
+        return pass;
     }
 
-    public static String bruteForce(int size) {
+    public void setPassword(String pass) {
+        BruteForce.pass = pass;
+    }
+
+    public static void main(String[] args) {
+        bruteForce bruteForce1 = new bruteForce();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input Password Length: ");
+        int x = in.nextInt();
+        bruteForce1(x);
+    }
+
+        public static class bruteForce() {
+            String pass = "Enter Password Here";
+            Scanner in = new Scanner(System.in);
         long start = System.currentTimeMillis();
         int[] password = new int[size];
         String[] finalPassword = new String[size];
@@ -13,7 +33,8 @@ public class BruteForce {
             password[i] = 0;
             finalPassword[i] = "";
         }
-        String pass = "0ldp@ssw0rd=dumb";
+        System.out.print("Input Desired Password: ");
+        pass = in.nextLine();
         return computePermutations(size, password, 0, pass, start);
     }
 
@@ -168,5 +189,13 @@ public class BruteForce {
 
         }
         return "";
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(final String pass) {
+        this.pass = pass;
     }
 }

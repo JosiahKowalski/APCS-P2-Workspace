@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.04/12.04.iml" filepath="$PROJECT_DIR$/Mod 12/12.04/12.04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.05/12.05.iml" filepath="$PROJECT_DIR$/Mod 12/12.05/12.05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.06/12.06.iml" filepath="$PROJECT_DIR$/Mod 12/12.06/12.06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 13/13.01/13.01.iml" filepath="$PROJECT_DIR$/Mod 13/13.01/13.01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 13/13.01/13.011/13.011.iml" filepath="$PROJECT_DIR$/Mod 13/13.01/13.011/13.011.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 13/13.02/13.02.iml" filepath="$PROJECT_DIR$/Mod 13/13.02/13.02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 13/13.03/13.03.iml" filepath="$PROJECT_DIR$/Mod 13/13.03/13.03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 13/13.04/13.04.iml" filepath="$PROJECT_DIR$/Mod 13/13.04/13.04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 13/13.05/13.05.iml" filepath="$PROJECT_DIR$/Mod 13/13.05/13.05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 14/14.02/14.02.iml" filepath="$PROJECT_DIR$/Mod 14/14.02/14.02.iml" />
       <module fileurl="file://$PROJECT_DIR$/APCS-P2-Workspace.iml" filepath="$PROJECT_DIR$/APCS-P2-Workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.04/Assignments/Assignments.iml" filepath="$PROJECT_DIR$/Mod 12/12.04/Assignments/Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.04/Lessions/Lessions.iml" filepath="$PROJECT_DIR$/Mod 12/12.04/Lessions/Lessions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.09/eimacs/eimacs.iml" filepath="$PROJECT_DIR$/Mod 12/12.09/eimacs/eimacs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod 12/12.03/lessions/src.iml" filepath="$PROJECT_DIR$/Mod 12/12.03/lessions/src.iml" />
     </modules>
   </component>
 </project>
